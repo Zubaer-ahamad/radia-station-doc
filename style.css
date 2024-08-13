@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background: #F7F8FB;
+    font-family: Oswald;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.softair-doc {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 60px;
+}
+
+.left-sidebar {
+    width: 40%;
+    height: auto;
+    margin: 60px 0 60px 60px;
+    padding: 40px 40px 216px 40px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 0.16);
+}
+
+
+.heading-title {
+    font-size: 56px;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+
+.line-break {
+    background: rgba(33, 32, 32, 0.40);
+}
+
+.link-section {
+    margin-top: 60px;
+}
+
+.side-link {
+    display: block;
+    margin-bottom: 16px;
+    padding: 16px;
+    border-radius: 6px;
+    background: #F7F8FB;
+    color: rgba(33, 32, 32, 0.70);
+    font-size: 36px;
+}
+
+.active {
+    color: #4B66C9;
+    border: 1px solid #4B66C9;
+}
+
+.right-sidebar {
+    width: 60%;
+    margin: 60px;
+    margin-left: 0px;
+}
+
+.line-break-right {
+    max-width: 954px;
+}
+
+.introduction {
+    min-width: 100%;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 0.16);
+    padding: 40px;
+    margin-bottom: 60px;
+}
+
+.btn-group {
+    display: flex;
+    align-items: baseline;
+}
+
+.menu-btn {
+    border: none;
+    background: none;
+    display: none;
+    margin-right: 20px;
+}
+
+.intro-title {
+    color: #212020;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.intro-subtitle {
+    color: rgba(33, 32, 32, 0.70);
+    font-size: 36px;
+}
+
+.intro-description {
+    padding-bottom: 40px;
+}
+
+.description-heading {
+    max-width: 944px;
+    color: rgba(33, 32, 32, 0.70);
+    font-size: 24px;
+}
+
+
+.description-title {
+    color: #212020;
+    font-size: 46px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.line-gap {
+    margin-top: 40px;
+}
+
+.package-structure {
+    margin-top: 40px;
+}
+
+.package-structure-file {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.folder-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.folder-icon {
+    font-size: 24px;
+    color: #4B66C9;
+}
+
+.template-feature {
+    margin-top: 40px;
+}
+
+.feature-item {
+    margin-bottom: 16px;
+}
+
+ul li {
+    list-style: none;
+}
+
+.template-feature-heading {
+    margin-top: 40px;
+}
+
+.credits-item {
+    margin-top: 16px;
+    margin-bottom: 40px;
+}
+
+.credits-note {
+    color: #212020;
+    font-weight: 500;
+}
+
+.edit-figma-title {
+    text-align: center;
+}
+
+
+/* ==============================Extra Large Device============================== */
+@media (min-width: 992px) and (max-width: 1399.98px) {
+    .softair-doc {
+        gap: 30px;
+    }
+
+    .side-link {
+        font-size: 30px;
+    }
+
+    .heading-title {
+        font-size: 50px;
+    }
+
+    .intro-title {
+        font-size: 32px;
+    }
+
+    .intro-subtitle {
+        font-size: 32px;
+    }
+
+    .description-heading {
+        font-size: 20px;
+    }
+
+    .description-title {
+        font-size: 40px;
+    }
+}
+
+/* ============================== Small Device============================== */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .left-sidebar {
+        display: none;
+        width: 350px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        padding-bottom: 20px;
+    }
+
+    .link-section {
+        margin-top: 40px;
+    }
+
+    .side-link {
+        padding: 14px;
+        font-size: 28px;
+    }
+
+    .sidebar-toggle {
+        display: block;
+    }
+
+    .right-sidebar {
+        width: 100%;
+        margin: 10px;
+        padding: 15px;
+        margin-top: 40px;
+    }
+
+    .introduction {
+        min-width: 100%;
+        min-height: 500px;
+        padding: 15px;
+    }
+
+    .heading-title {
+        font-size: 44px;
+    }
+
+    .intro-title {
+        font-size: 28px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .intro-subtitle {
+        font-size: 28px;
+    }
+
+    .line-break-right {
+        width: 100%;
+    }
+
+    .description-heading {
+        font-size: 18px;
+        max-width: 100%;
+    }
+
+    .description-title {
+        font-size: 36px;
+    }
+
+    .edit-figma-title {
+        padding: 20px;
+    }
+}
+
+/* ==============================Extra Small Device============================== */
+@media (max-width: 575.98px) {
+    .left-sidebar {
+        display: none;
+        min-width: 250px;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        padding-bottom: 20px;
+    }
+
+    .link-section {
+        margin-top: 30px;
+    }
+
+    .side-link {
+        padding: 12px;
+        font-size: 24px;
+    }
+
+    .sidebar-toggle {
+        display: block;
+    }
+
+    .right-sidebar {
+        width: 100%;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .introduction {
+        min-width: 100%;
+        min-height: 500px;
+        padding: 10px;
+    }
+
+    .heading-title {
+        font-size: 36px;
+    }
+
+    .intro-title {
+        font-size: 22px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .intro-subtitle {
+        font-size: 22px;
+    }
+
+    .line-break-right {
+        width: 100%;
+    }
+
+    .description-heading {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .description-title {
+        font-size: 28px;
+    }
+
+    .edit-figma-title {
+        padding: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
