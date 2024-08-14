@@ -88,6 +88,7 @@ nav {
     color: #212020;
     background: none;
     padding-left: 30px;
+    border-bottom: 0;
 }
 
 .line-break-right {
@@ -230,19 +231,27 @@ ul, ol {
 
 
 /* ==============================Extra Large Device============================== */
-@media (min-width: 992px) and (max-width: 1399.98px) {
+@media (min-width: 992px) and (max-width: 1299.98px) {
+    .left-sidebar {
+        margin-top: 30px;
+    }
 
+    .right-sidebar {
+        margin-top: 30px;
+    }
 }
 
 /* ============================== Small Device============================== */
 @media (min-width: 576px) and (max-width: 991.98px) {
     .left-sidebar {
         display: none;
-        width: 350px;
+        min-width: 150px;
+        margin: 0;
+    }
+
+    nav {
         position: absolute;
-        top: 80px;
-        left: 0;
-        padding-bottom: 20px;
+        width: 150px;
     }
 
     .link-section {
@@ -256,6 +265,10 @@ ul, ol {
 
     .sidebar-toggle {
         display: block;
+        position: absolute;
+        width: 100px;
+        top: 100px;
+        left: 10px;
     }
 
     .right-sidebar {
@@ -317,6 +330,7 @@ ul, ol {
         position: absolute;
         width: 100px;
     }
+
     .link-section {
         margin-top: 30px;
     }
