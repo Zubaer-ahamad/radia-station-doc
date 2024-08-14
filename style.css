@@ -22,8 +22,8 @@ a {
 
 .softair-doc {
     display: flex;
-    justify-content: center;
-    align-items: start;
+    /*justify-content: center;*/
+    /*align-items: start;*/
     gap: 40px;
 }
 
@@ -78,10 +78,10 @@ nav {
 }
 
 .right-sidebar {
-    max-width: 950px;
+    width: 950px;
     fill: #FFF;
     filter: drop-shadow(0px 1px 10px rgba(0, 0, 0, 0.10));
-    margin-top: 60px;
+    margin: 60px 60px 0 0;
 }
 
 .right-heading-title {
@@ -233,11 +233,11 @@ ul, ol {
 /* ==============================Extra Large Device============================== */
 @media (min-width: 992px) and (max-width: 1299.98px) {
     .left-sidebar {
-        margin-top: 30px;
+        margin: 30px 0 0 30px;
     }
 
     .right-sidebar {
-        margin-top: 30px;
+        margin: 30px 30px 0 0;
     }
 }
 
