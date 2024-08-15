@@ -22,8 +22,6 @@ a {
 
 .softair-doc {
     display: flex;
-    /*justify-content: center;*/
-    /*align-items: start;*/
     gap: 40px;
 }
 
@@ -58,7 +56,6 @@ nav {
 
 .side-link {
     display: block;
-    /*margin-bottom: 16px;*/
     padding: 16px 24px;
     color: rgba(33, 32, 32, 0.70);
     font-size: 18px;
@@ -191,7 +188,6 @@ nav {
 
 .feature-item {
     margin-bottom: 16px;
-    /*padding-left: 30px;*/
 }
 
 ul, ol {
@@ -229,15 +225,38 @@ ul, ol {
     border-radius: 30px;
 }
 
+iframe {
+    width: 100%;
+    height: 369px;
+}
+
 
 /* ==============================Extra Large Device============================== */
 @media (min-width: 992px) and (max-width: 1299.98px) {
     .left-sidebar {
+        min-width: 250px;
         margin: 30px 0 0 30px;
     }
 
     .right-sidebar {
         margin: 30px 30px 0 0;
+    }
+
+    nav {
+        width: 250px;
+        border-radius: 20px;
+    }
+
+    .side-link {
+        display: block;
+        padding: 14px 22px;
+        color: rgba(33, 32, 32, 0.70);
+        font-size: 16px;
+        border-bottom: 1px solid #B4B4B4;
+    }
+
+    iframe {
+        height: 320px;
     }
 }
 
@@ -245,7 +264,7 @@ ul, ol {
 @media (min-width: 576px) and (max-width: 991.98px) {
     .left-sidebar {
         display: none;
-        min-width: 150px;
+        width: 150px;
         margin: 0;
     }
 
@@ -254,143 +273,200 @@ ul, ol {
         width: 150px;
     }
 
-    .link-section {
-        margin-top: 40px;
+    .table-content {
+        font-size: 14px;
+        padding: 17px;
+    }
+
+    .heading-title {
+        font-size: 24px;
+    }
+
+    .table-content {
+        font-size: 16px;
     }
 
     .side-link {
-        padding: 14px;
-        font-size: 28px;
+        padding: 8px;
+        font-size: 14px;
     }
 
     .sidebar-toggle {
         display: block;
         position: absolute;
         width: 100px;
-        top: 100px;
-        left: 10px;
+        top: 80px;
+        left: 20px;
     }
 
     .right-sidebar {
         width: 100%;
         margin: 10px;
-        padding: 15px;
-        margin-top: 40px;
+        margin-top: 20px;
     }
 
     .introduction {
-        min-width: 100%;
-        min-height: 500px;
-        padding: 15px;
-    }
-
-    .heading-title {
-        font-size: 44px;
+        width: 100%;
     }
 
     .intro-title {
-        font-size: 28px;
+        font-size: 18px;
+        padding-left: 30px;
+        padding-right: 10px;
+    }
+
+    .intro-subtitle {
+        font-size: 18px;
+        padding-right: 10px;
     }
 
     .menu-btn {
         display: block;
     }
 
-    .intro-subtitle {
-        font-size: 28px;
-    }
-
     .line-break-right {
         width: 100%;
     }
 
+    .intro-description {
+        padding-bottom: 20px;
+    }
+
     .description-heading {
-        font-size: 18px;
-        max-width: 100%;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .line-gap {
+        margin-bottom: 20px;
     }
 
     .description-title {
-        font-size: 36px;
+        font-size: 22px;
+        margin-bottom: 20px;
+        margin-top: 25px;
     }
 
-    .edit-figma-title {
-        padding: 20px;
+    .youtube-video {
+        border-radius: 20px;
     }
+
+    iframe {
+        height: 340px;
+    }
+
 }
 
 /* ==============================Extra Small Device============================== */
 @media (max-width: 575.98px) {
     .left-sidebar {
         display: none;
-        min-width: 100px;
+        width: 120px;
         margin: 0;
     }
 
     nav {
         position: absolute;
-        width: 100px;
+        width: 120px;
     }
 
-    .link-section {
-        margin-top: 30px;
+    .table-content {
+        font-size: 10px;
+        padding: 14px;
+    }
+
+    .heading-title {
+        font-size: 20px;
+        padding-left: 10px;
+    }
+
+    .table-content {
+        font-size: 14px;
     }
 
     .side-link {
-        padding: 12px;
-        font-size: 24px;
+        padding: 6px;
+        font-size: 10px;
     }
 
     .sidebar-toggle {
         display: block;
         position: absolute;
-        width: 100px;
-        top: 100px;
-        left: 10px;
+        width: 120px;
+        top: 70px;
+        left: 15px;
+    }
+
+    .folder-group{
+        padding-left: 10px;
     }
 
     .right-sidebar {
         width: 100%;
-        padding: 10px;
-        margin: 10px;
+        margin: 8px;
     }
 
     .introduction {
-        min-width: 100%;
-        min-height: 500px;
-        padding: 10px;
-    }
-
-    .heading-title {
-        font-size: 36px;
+        width: 100%;
     }
 
     .intro-title {
-        font-size: 22px;
+        font-size: 16px;
+        padding-left: 10px;
+    }
+
+    .intro-subtitle {
+        font-size: 16px;
+        padding-left: 10px;
+    }
+
+    .feature-item{
+        padding-left: 0;
     }
 
     .menu-btn {
         display: block;
     }
 
-    .intro-subtitle {
-        font-size: 22px;
-    }
-
-    .line-break-right {
-        width: 100%;
-    }
-
     .description-heading {
-        font-size: 16px;
-        max-width: 100%;
+        font-size: 14px;
+        margin-top: 18px;
+        padding-left: 10px;
+    }
+
+    ul, ol {
+        padding-left: 30px;
+    }
+
+    .package-title{
+        padding-left: 0;
+    }
+
+    .feature-item{
+        padding-left: 0;
+    }
+
+    .line-gap {
+        margin-bottom: 20px;
     }
 
     .description-title {
-        font-size: 28px;
+        font-size: 20px;
+        margin-bottom: 18px;
+        margin-top: 22px;
+        padding-left: 10px;
     }
 
-    .edit-figma-title {
+    .edit-figma-video {
         padding: 10px;
+    }
+
+    .youtube-video {
+        border-radius: 20px;
+    }
+
+    iframe {
+        height: 200px;
     }
 }
 
