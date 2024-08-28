@@ -190,7 +190,7 @@ nav {
     margin-bottom: 16px;
 }
 
-ul, ol {
+ul {
     padding-left: 50px;
 }
 
@@ -443,7 +443,7 @@ iframe {
         padding-left: 10px;
     }
 
-    ul, ol {
+    ul {
         padding-left: 30px;
     }
 
